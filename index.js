@@ -10,7 +10,7 @@ const playlistRoutes= require('./routes/playlist')
 const passport= require("passport")
 require("dotenv").config();
 const app = express();
-const port = 8000;
+const port =process.env.port || 8000;
 
 app.use(cors());
 app.use(express.json());  //converts the data into json format
